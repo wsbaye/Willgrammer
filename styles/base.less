@@ -1,0 +1,169 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
+// for a full listing of what's available.
+
+atom-text-editor, :host {
+  background-color: @base03;
+  color: @base0;
+}
+
+atom-text-editor, :host {
+  .invisible-character,
+  .indent-guide {
+    color: @base01;
+  }
+
+  .gutter {
+    background-color: @base02;
+  }
+
+  .gutter .line-number {
+    opacity: 1;
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @magenta;
+  }
+
+  .cursor {
+    border-color: @base3;
+  }
+
+  .selection .region {
+    background-color: @base02;
+    //background-color: #FFFFFF;
+    color: @base03;
+  }
+  .selection .text {
+    //background-color: @base02;
+    background-color: #000000;
+    //color: @base03;
+  }
+
+  .line-number.cursor-line-no-selection {
+    background-color: @base01;
+    color: white;
+  }
+}
+
+.bracket-matcher .region {
+  background-color: @base1;
+  opacity: 0.7;
+}
+
+.comment {
+  color: @base05;
+  font-style: italic;
+}
+
+.entity {
+  //changed HTML tags
+  //color: @green;
+  &.name.type {
+    color: @green;
+  }
+
+  &.other.inherited-class {
+    color: @cyan;
+  }
+
+  &.name.function {
+    color: @green;
+  }
+
+  &.name.class,
+  &.name.type.class {
+    color: @cyan;
+  }
+
+  &.name.section {
+    color: @green;
+  }
+
+  &.name.tag {
+    //color:#7f8c8d;
+    color:@blue;
+  }
+
+  &.other.attribute-name {
+    //color: @cyan;
+    //color: #F2C9C9;
+    color: @green;
+
+    &.id {
+      //color: @cyan;
+      color: @red;
+    }
+  }
+}
+
+.keyword {
+  color: @red;
+}
+
+.any-method {
+  color: @blue;
+  //color: @green;
+}
+
+.storage.type {
+  color: @blue;
+}
+
+.storage.modifier {
+  color: @red;
+}
+
+.constant {
+  color: @violet;
+
+  &.numeric,
+  &.boolean {
+    color: @green;
+  }
+}
+
+//.variable {
+  //color: #fff;
+//}
+
+.delimiter, .brace {
+  color: @base0;
+}
+
+.delimiter.period {
+  color: @green;
+}
+
+.invalid.deprecated {
+  text-decoration: underline;
+  color: @red;
+}
+
+.invalid.illegal {
+  color: @red;
+}
+
+.string {
+  //color: @yellow;
+    color: #778899;
+
+
+  .constant.character.escape {
+    color: @red;
+  }
+
+  &.regexp {
+    //color: @blue;
+    color: @green;
+
+    .source.ruby.embedded,
+    .string.regexp.arbitrary-repitition {
+      color: @red;
+    }
+  }
+
+}
